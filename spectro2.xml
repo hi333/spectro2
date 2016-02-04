@@ -1,22 +1,35 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_if" id="94" inline="false" x="-15" y="44">
-    <value name="IF0">
-      <block type="logic_compare" id="1" inline="true">
-        <field name="OP">LT</field>
-        <value name="A">
-          <block type="sensor_spectrometer" id="2">
-            <field name="LIGHT">BLUE</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="math_number" id="3">
-            <field name="NUM">99</field>
-          </block>
-        </value>
+  <block type="controls_whileUntil" id="134" inline="false" x="-60" y="23">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="141">
+        <field name="OBJECT">ENTER</field>
       </block>
     </value>
-    <statement name="DO0">
-      <block type="movement_forward" id="104"></block>
+    <statement name="DO">
+      <block type="controls_if" id="94" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="1" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_spectrometer" id="2">
+                <field name="LIGHT">BLUE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="3">
+                <field name="NUM">99</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_forward" id="104"></block>
+        </statement>
+        <next>
+          <block type="movement_stop" id="121"></block>
+        </next>
+      </block>
     </statement>
   </block>
 </xml>
