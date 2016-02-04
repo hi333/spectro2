@@ -95,12 +95,12 @@
                                                 </value>
                                                 <value name="STARTY">
                                                   <block type="math_number" id="198">
-                                                    <field name="NUM">10</field>
+                                                    <field name="NUM">20</field>
                                                   </block>
                                                 </value>
                                                 <next>
                                                   <block type="oled_drawtext" id="201">
-                                                    <field name="TEXT">SCHIAPARELLI CRATER</field>
+                                                    <field name="TEXT">SCHIAPARELLI</field>
                                                     <next>
                                                       <block type="oled_setcursor" id="202" inline="true">
                                                         <value name="STARTX">
@@ -110,7 +110,7 @@
                                                         </value>
                                                         <value name="STARTY">
                                                           <block type="math_number" id="204">
-                                                            <field name="NUM">20</field>
+                                                            <field name="NUM">40</field>
                                                           </block>
                                                         </value>
                                                       </block>
