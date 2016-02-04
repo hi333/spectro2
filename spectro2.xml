@@ -28,40 +28,41 @@
           <block type="movement_forward" id="10"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_stop" id="11"></block>
-        </statement>
-        <next>
-          <block type="oled_cleardisplay" id="147">
+          <block type="movement_stop" id="11">
             <next>
-              <block type="oled_drawtext" id="196">
-                <field name="TEXT">I MADE IT TO</field>
+              <block type="oled_cleardisplay" id="147">
                 <next>
-                  <block type="oled_setcursor" id="181" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="197">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="215">
-                        <field name="NUM">40</field>
-                      </block>
-                    </value>
+                  <block type="oled_drawtext" id="196">
+                    <field name="TEXT">I MADE IT TO</field>
                     <next>
-                      <block type="oled_drawtext" id="201">
-                        <field name="TEXT">SCHIAPARELLI</field>
+                      <block type="oled_setcursor" id="181" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="197">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="215">
+                            <field name="NUM">40</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="oled_setcursor" id="202" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="203">
-                                <field name="NUM">10</field>
+                          <block type="oled_drawtext" id="201">
+                            <field name="TEXT">SCHIAPARELLI</field>
+                            <next>
+                              <block type="oled_setcursor" id="202" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="203">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="198">
+                                    <field name="NUM">20</field>
+                                  </block>
+                                </value>
                               </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="198">
-                                <field name="NUM">20</field>
-                              </block>
-                            </value>
+                            </next>
                           </block>
                         </next>
                       </block>
@@ -71,7 +72,7 @@
               </block>
             </next>
           </block>
-        </next>
+        </statement>
       </block>
     </statement>
   </block>
