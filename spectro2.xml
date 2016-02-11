@@ -37,49 +37,58 @@
               <block type="oled_drawtext" id="10">
                 <field name="TEXT">I MADE IT TO</field>
                 <next>
-                  <block type="oled_setcursor" id="11" inline="true">
-                    <value name="STARTX">
-                      <block type="math_number" id="12">
-                        <field name="NUM">10</field>
-                      </block>
-                    </value>
-                    <value name="STARTY">
-                      <block type="math_number" id="13">
-                        <field name="NUM">40</field>
+                  <block type="robot_delay" id="24" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="26">
+                        <field name="NUM">500</field>
                       </block>
                     </value>
                     <next>
-                      <block type="oled_drawtext" id="14">
-                        <field name="TEXT">SCHIAPARELLI</field>
+                      <block type="oled_setcursor" id="11" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="12">
+                            <field name="NUM">10</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="13">
+                            <field name="NUM">40</field>
+                          </block>
+                        </value>
                         <next>
-                          <block type="oled_setcursor" id="15" inline="true">
-                            <value name="STARTX">
-                              <block type="math_number" id="16">
-                                <field name="NUM">10</field>
-                              </block>
-                            </value>
-                            <value name="STARTY">
-                              <block type="math_number" id="17">
-                                <field name="NUM">20</field>
-                              </block>
-                            </value>
+                          <block type="oled_drawtext" id="14">
+                            <field name="TEXT">SCHIAPARELLI</field>
                             <next>
-                              <block type="oled_drawtext" id="18">
-                                <field name="TEXT">CRATER</field>
+                              <block type="oled_setcursor" id="15" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="16">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="17">
+                                    <field name="NUM">20</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="oled_setcursor" id="19" inline="true">
-                                    <value name="STARTX">
-                                      <block type="math_number" id="20">
-                                        <field name="NUM">10</field>
-                                      </block>
-                                    </value>
-                                    <value name="STARTY">
-                                      <block type="math_number" id="21">
-                                        <field name="NUM">40</field>
-                                      </block>
-                                    </value>
+                                  <block type="oled_drawtext" id="18">
+                                    <field name="TEXT">CRATER</field>
                                     <next>
-                                      <block type="movement_stop" id="22"></block>
+                                      <block type="oled_setcursor" id="19" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="20">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="21">
+                                            <field name="NUM">40</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="movement_stop" id="22"></block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
