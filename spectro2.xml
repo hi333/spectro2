@@ -40,7 +40,7 @@
                   <block type="robot_delay" id="24" inline="true">
                     <value name="DELAY">
                       <block type="math_number" id="26">
-                        <field name="NUM">500</field>
+                        <field name="NUM">1000</field>
                       </block>
                     </value>
                     <next>
@@ -57,7 +57,7 @@
                         </value>
                         <next>
                           <block type="oled_drawtext" id="14">
-                            <field name="TEXT">SCHIAPARELLI</field>
+                            <field name="TEXT">CRATER</field>
                             <next>
                               <block type="oled_setcursor" id="15" inline="true">
                                 <value name="STARTX">
@@ -72,7 +72,7 @@
                                 </value>
                                 <next>
                                   <block type="oled_drawtext" id="18">
-                                    <field name="TEXT">CRATER</field>
+                                    <field name="TEXT">SCHIAPARELLI</field>
                                     <next>
                                       <block type="oled_setcursor" id="19" inline="true">
                                         <value name="STARTX">
