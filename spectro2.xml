@@ -64,7 +64,7 @@
                               </block>
                             </value>
                             <next>
-                              <block type="oled_drawtext" id="22">
+                              <block type="oled_drawtext" id="18">
                                 <field name="TEXT">CRATER</field>
                                 <next>
                                   <block type="oled_setcursor" id="19" inline="true">
@@ -79,7 +79,7 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="18"></block>
+                                      <block type="movement_stop" id="22"></block>
                                     </next>
                                   </block>
                                 </next>
