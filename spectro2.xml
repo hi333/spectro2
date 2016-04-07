@@ -35,7 +35,7 @@
           <block type="oled_cleardisplay" id="9">
             <next>
               <block type="oled_drawtext" id="10">
-                <field name="TEXT">I MADE IT TO</field>
+                <field name="TEXT">SCHIAPARELLI</field>
                 <next>
                   <block type="robot_delay" id="11" inline="true">
                     <value name="DELAY">
@@ -72,7 +72,7 @@
                                 </value>
                                 <next>
                                   <block type="oled_drawtext" id="20">
-                                    <field name="TEXT">SCHIAPARELLI</field>
+                                    <field name="TEXT">I MADE IT TO</field>
                                     <next>
                                       <block type="oled_setcursor" id="21" inline="true">
                                         <value name="STARTX">
