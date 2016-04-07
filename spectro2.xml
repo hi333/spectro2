@@ -27,7 +27,21 @@
         <statement name="DO0">
           <block type="movement_forward" id="7">
             <next>
-              <block type="oled_cleardisplay" id="8"></block>
+              <block type="movement_setmotors" id="67" inline="true">
+                <value name="BOTHMOVLEFT">
+                  <block type="math_number" id="83">
+                    <field name="NUM">90</field>
+                  </block>
+                </value>
+                <value name="BOTHMOVRIGHT">
+                  <block type="math_number" id="84">
+                    <field name="NUM">90</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_cleardisplay" id="8"></block>
+                </next>
+              </block>
             </next>
           </block>
         </statement>
