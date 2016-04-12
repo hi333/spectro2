@@ -75,7 +75,67 @@
                           <block type="oled_drawtext" id="19">
                             <field name="TEXT">SCHIAPARELLI</field>
                             <next>
-                              <block type="movement_stop" id="32"></block>
+                              <block type="led_select" id="20" inline="true">
+                                <field name="ACTION">FLASH</field>
+                                <value name="LED">
+                                  <block type="math_number" id="21">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="22" inline="true">
+                                    <field name="ACTION">FLASH</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="23">
+                                        <field name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="led_select" id="24" inline="true">
+                                        <field name="ACTION">ON</field>
+                                        <value name="LED">
+                                          <block type="math_number" id="25">
+                                            <field name="NUM">2</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="led_select" id="26" inline="true">
+                                            <field name="ACTION">ON</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="27">
+                                                <field name="NUM">3</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="led_select" id="28" inline="true">
+                                                <field name="ACTION">FLASH</field>
+                                                <value name="LED">
+                                                  <block type="math_number" id="29">
+                                                    <field name="NUM">4</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="led_select" id="30" inline="true">
+                                                    <field name="ACTION">FLASH</field>
+                                                    <value name="LED">
+                                                      <block type="math_number" id="31">
+                                                        <field name="NUM">5</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="movement_stop" id="32"></block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
                             </next>
                           </block>
                         </next>
@@ -89,65 +149,5 @@
         </statement>
       </block>
     </statement>
-    <next>
-      <block type="led_select" id="20" inline="true">
-        <field name="ACTION">FLASH</field>
-        <value name="LED">
-          <block type="math_number" id="21">
-            <field name="NUM">0</field>
-          </block>
-        </value>
-        <next>
-          <block type="led_select" id="22" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="23">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <next>
-              <block type="led_select" id="24" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="25">
-                    <field name="NUM">2</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="led_select" id="26" inline="true">
-                    <field name="ACTION">ON</field>
-                    <value name="LED">
-                      <block type="math_number" id="27">
-                        <field name="NUM">3</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="28" inline="true">
-                        <field name="ACTION">FLASH</field>
-                        <value name="LED">
-                          <block type="math_number" id="29">
-                            <field name="NUM">4</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="led_select" id="30" inline="true">
-                            <field name="ACTION">FLASH</field>
-                            <value name="LED">
-                              <block type="math_number" id="31">
-                                <field name="NUM">5</field>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
-    </next>
   </block>
 </xml>
