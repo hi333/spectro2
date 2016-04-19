@@ -25,22 +25,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_forward" id="7">
-            <next>
-              <block type="movement_setmotors" id="8" inline="true">
-                <value name="BOTHMOVLEFT">
-                  <block type="math_number" id="9">
-                    <field name="NUM">100</field>
-                  </block>
-                </value>
-                <value name="BOTHMOVRIGHT">
-                  <block type="math_number" id="10">
-                    <field name="NUM">100</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
+          <block type="movement_forward" id="7"></block>
         </statement>
         <statement name="ELSE">
           <block type="oled_cleardisplay" id="11">
